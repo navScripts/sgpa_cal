@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th Semester SGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id="asd">5th Sem <br>SGPA Calculator</h1>
+    </div>
+
+    <div id="main">
+        <!-- Scrollable container for the form -->
+        <div id="form-container">
+            <form id="sgpa-form">
+                <div>
+                    <label for="grade1">SEPM</label>
+                    <input type="number" class="inpt" id="grade1" name="grade1" placeholder="Enter SEPM marks" min="0" max="10" required>
+                </div>
+                <div>
+                    <label for="grade2">CN</label>
+                    <input type="number" class="inpt" id="grade2" name="grade2" placeholder="Enter CN marks" min="0" max="10" required>
+                </div>
+                <div>
+                    <label for="grade3">TOC</label>
+                    <input type="number" class="inpt" id="grade3" name="grade3" placeholder="Enter TOC marks" min="0" max="10" required>
+                </div>
+                <div>
+                    <label for="grade4">LAB</label>
+                    <input type="number" class="inpt" id="grade4" name="grade4" placeholder="Enter DVP lab marks" min="0" max="10" required>
+                </div>
+                <div>
+                    <label for="grade5">UNIX</label>
+                    <input type="number" class="inpt" id="grade5" name="grade5" placeholder="Enter unix marks" min="0" max="10" required>
+                </div>
+                <div>
+                    <label for="grade6">RM</label>
+                    <input type="number" class="inpt" id="grade6" name="grade6" placeholder="Enter RM marks" min="0" max="10" required>
+                </div>
+                <div>
+                    <label for="grade7">EVS</label>
+                    <input type="number" class="inpt" id="grade7" name="grade7" placeholder="Enter EVS marks" min="0" max="10" required>
+                </div>
+                <div>
+                    <label for="grade8">MINI PROJ</label>
+                    <input type="number" class="inpt" id="grade8" name="grade7" placeholder="Enter MINI PROJ marks" min="0" max="10" required>
+                </div>
+
+                <button id="calculate-btn" class="button-48" type="button"><span class="text">Calculate SGPA</span></button>
+                <button id="eraser-btn" class="button-48" type="button"><span class="text">Reset</span></button>
+            <button id="save-btn" class="button-48" type="button"><span class="text">Save SGPA</span></button>
+            </form>
+
+          
+        </div>
+      
+        
+    </div>
+    <div>
+        <h2 id="disp" class="display"></h2>
+    <h2 id="result" class="display" style="color:antiquewhite"></h2>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
