@@ -1,7 +1,7 @@
 /* Style for the body */
 body {
     font-family: 'Arial', sans-serif;
-    background-color:#735DA5;
+    background-color: #735DA5;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,9 +9,14 @@ body {
     align-items: center;
     height: 100vh;
 }
-#main{
+
+/* Container for the form */
+#main {
     padding-right: 100px;
-   /* background-color:  #818AA3 */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: auto; /* Ensure the main section doesn't expand to 100% width */
 }
 /* Container for the form */
 /* Container for the form */
@@ -118,9 +123,13 @@ h2 {
     margin-top: 20px;
     color: white;
 }
-#result{
-    margin-left: 2px;
-}
+/* #result{
+
+    margin-left: 200px;
+    margin-top: 250px;
+} */
+
+
 
 #asd{
     color: white;
@@ -197,35 +206,54 @@ h2 {
     position: relative;
 }
 /* Base Layout */
+/* Base Layout */
+/* Base Layout */
 #main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* Align items to the top */
 }
 
-
+/* Result styling for larger screens (laptops/desktops) */
+/* #result {
+    margin-left: 200px;
+    margin-top: 250px;
+} */
 
 /* Responsive Design for Small Screens */
 @media (max-width: 500px) {
     #main {
         flex-direction: column; /* Stack form and result vertically */
         align-items: center;
+        text-align: center;
     }
 
-    #result {
-        margin-top: 20px; /* Add space above the result */
-        text-align: center; /* Center-align the result text */
-    }
     form {
-        padding: 10px;
         width: 90%; /* Take almost full width on small screens */
+        padding: 20px;
     }
 
     button {
-        font-size: 16px; /* Adjust button text size */
+        font-size: 16px;
+        width: 100%; /* Buttons should be full width */
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #asd {
+        font-size: 30px;
+    }
+
+    /* Override result styling for mobile devices */
+    #result {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 20px; /* Add space between form and result */
+        width: 100%; /* Full width */
+        text-align: center; /* Center the text */
     }
 }
-
 
 /* Scrollable form container */
 #form-container {
