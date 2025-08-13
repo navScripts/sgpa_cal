@@ -123,11 +123,7 @@ h2 {
     margin-top: 20px;
     color: white;
 }
-/* #result{
 
-    margin-left: 200px;
-    margin-top: 250px;
-} */
 
 
 
@@ -282,3 +278,4 @@ h2 {
 #form-container::-webkit-scrollbar-track {
     background-color: #F0F0F0; /* Scrollbar track color */
 }
+

@@ -11,8 +11,7 @@ function calculateSGPA() {
         parseInt(parseInt(document.getElementById('grade5').value) / 10) + 1,
         parseInt(parseInt(document.getElementById('grade6').value) / 10) + 1,
         parseInt(parseInt(document.getElementById('grade7').value) / 10) + 1,
-        parseInt(parseInt(document.getElementById('grade8').value) / 10) + 1,
-        
+       
     ];
 
     console.log(grades);
@@ -32,7 +31,7 @@ function calculateSGPA() {
     }
 
     // Calculate the total grade points and number of subjects
-    const credits = [4, 4, 4, 1, 3, 3, 1,2];
+    const credits = [4, 4, 3,3,1,1,2];
     const each_sub_credits = [];
 
     // Iterate through the arrays and multiply respective elements
@@ -103,7 +102,7 @@ function saveSGPA() {
 
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = 'SGPA.txt';
+    link.download = 'SGPA.pdf';
     link.click();
 
     URL.revokeObjectURL(link.href);
